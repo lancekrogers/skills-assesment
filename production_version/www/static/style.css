@@ -54,12 +54,12 @@ body {
     text-align:center;
     float: right;
     background-color: transparent;
-    max-height: 420px;
-    overflow-y: scroll;
     border-radius: 1em;
 }
 #text-wrapper-1 {
     background-color: #ffffff;
     border-radius: 1em;
+    max-height: 420px;
+    overflow-y: scroll;
 }
 

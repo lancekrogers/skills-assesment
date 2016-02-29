@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block body %}
+<div id="content">
+<br /><br /><br /><br /><br /><br />
+
+<div class="well-space">
+
+    <div class="well-lg" id="video-well-1">
+
+        <h1>Window 1</h1>
+        {% if video %}
+        {% if video.video.url %}
+        <video controls >
+          <source src="{% static ''%}{{video.video.url}}" type="video/mp4">
+            Your browser does not support HTML5 Video, please update to modern browser
+        </video>
+
+        {% endif %}
+        {% endif %}
+
+    </div> <!-- video-well-1 -->
+
+    <div class="well" id="text-well-1">
+
+        <h1>Window 2</h1>
+        <div class="well-sm" id="text-wrapper-1">
+        {% if video %}
+        {% if video.textGroup.all %}
+            {% for group in video.textGroup.all %}
+             <p id="text_fetcher{{ forloop.counter }}">{{ group.text }}</p>
+            {% endfor %}
+        {% endif %}
+        {% endif %}
+        </div><!-- text-wrapper-1 -->
+    </div><!-- text-well-1 -->
+</div> <!-- Well Space -->
+
+</div> <!--content>
+{% endblock %}

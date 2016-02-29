@@ -1,0 +1,13 @@
+.envrc
+.direnv
+*db.sqlite*
+*pycache*
+*__pycache__*
+*.idea*
+*/media/*
+*media*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

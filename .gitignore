@@ -1,0 +1,8 @@
+.envrc
+.direnv
+*db.sqlite*
+*pycache*
+*__pycache__*
+*.idea*
+*/media/*
+*media*

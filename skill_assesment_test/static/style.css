@@ -48,6 +48,13 @@ body {
 
 }
 
+@media (max-width: 600px) {
+    #video-well-1 {
+        float: none;
+        width: 100%;
+    }
+}
+
 #text-well-1 {
     width: 50%;
     margin: auto;
@@ -56,8 +63,23 @@ body {
     background-color: transparent;
 
 }
+@media (max-width: 600px) {
+    #text-well-1 {
+        float: none;
+        width: 100%;
+    }
+}
+
 #text-wrapper-1 {
     background-color: #ffffff;
-    border-radius: 2em;
+    border-radius: 1em;
+    position: center;
+    max-height: 420px;
+    overflow-y: scroll;
+}
+
+.well-space {
+    display:inline-block;
+    padding-top: 10%;
 }
 

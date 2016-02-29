@@ -81,4 +81,9 @@ body {
     padding-top: 10%;
 }
 
+@media(max-width: 600px) {
+    .well-space {
+        padding-top: 20%;
+    }
+}
 
